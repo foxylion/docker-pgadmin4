@@ -9,7 +9,7 @@ RUN apk add --no-cache alpine-sdk postgresql postgresql-dev \
  && pip install --no-cache-dir -r requirements.txt \
  && apk del alpine-sdk
 
-RUN mkdir -p /storage
+RUN mkdir -p /data
 
 COPY config_local.py /usr/local/lib/python2.7/site-packages/pgadmin4/
 
